@@ -7,7 +7,13 @@
   color: white;
   font-family: sans-serif;
   font-weight: bold;
-  padding: 0.5rem;
+  /*padding: 0.5rem; */
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* change font and other features according to screen size */
