@@ -16,6 +16,12 @@
   align-items: center;
 }
 
+.map-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* change font and other features according to screen size */
 /* mobile */
 html {

@@ -1,4 +1,5 @@
 import './App.css';
+import MapChart from "./MapChart";
 import { Link } from "react-router-dom";
 
 function App() {
@@ -10,6 +11,9 @@ function App() {
         <Link to="/locations">Locations</Link>
         <Link to="/resources">Resources</Link>
       </header>
+      <div className="map-chart">
+      <MapChart/>
+      </div>
     </div>
   );
 }
