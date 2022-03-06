@@ -1,0 +1,48 @@
+body {
+    background: -webkit-linear-gradient(top, #798DC3, #BC4689);
+    height: 100vh;
+  }
+  
+  .title {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    /*padding: 0.5rem; */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /*
+  .map-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  /* change font and other features according to screen size */
+  /* mobile */
+  html {
+    font-size: 10px;
+  }
+  /* tablet */
+  @media only screen and (min-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+  }
+  /* desktop */
+  @media only screen and (min-width: 768px) {
+    html {
+        font-size: 24px;
+    }
+  }
+  /* extra large */
+  @media only screen and (min-width: 1024px) {
+    html {
+        font-size: 40px;
+    }
+  }

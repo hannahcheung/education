@@ -1,3 +1,9 @@
-.stateMap {
+.map-chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.state-map {
     width: 50vw;
 }

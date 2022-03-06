@@ -1,9 +1,9 @@
-import './App.css';
+import React from "react";
 import { Link } from "react-router-dom";
 
-function App() {
+function Header() {
   return (
-    <div className="App">
+    <div>
       <header className="header">
         <span className="title">CODE FOR EVERYONE</span>
         <Link to="/about">About</Link>
@@ -14,4 +14,4 @@ function App() {
   );
 }
 
-export default App;
+export default Header;
