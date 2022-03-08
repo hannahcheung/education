@@ -7,3 +7,7 @@
 .state-map {
     width: 50vw;
 }
+
+.geography:hover {
+    color: black;
+}
