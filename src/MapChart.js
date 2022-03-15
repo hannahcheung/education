@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { geoCentroid } from "d3-geo";
+import ReactTooltip from 'react-tooltip';
 import Header from "./Header";
 import "./Header.css";
 import "./MapChart.css";
@@ -42,7 +43,7 @@ const MapChart = ({ setTooltipContent }) => {
     <div>
       <Header/>
       <div className="map-chart">
-        <ComposableMap data-tip="" projection="geoAlbersUsa" className="state-map">
+        <ComposableMap projection="geoAlbersUsa" className="state-map">
           <ZoomableGroup zoom={1}>
             <Geographies geography={geoUrl}>
               {({ geographies }) => (
@@ -74,7 +75,7 @@ const MapChart = ({ setTooltipContent }) => {
             </Geographies>
               {markers.map((marker, i) => {
                 return (
-              <Marker coordinates={marker.coordinates} key={i}
+              <Marker data-tip="" coordinates={marker.coordinates} key={i}
               onMouseOver={() => {
                 setTooltipContent(marker.url);
               }}
@@ -88,7 +89,7 @@ const MapChart = ({ setTooltipContent }) => {
                 transform="translate(-12, -24)"
                 
                 >
-                <circle cx="12" cy="10" r="3"/>
+                <circle cx="12" cy="10" r="4"/>
                 <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z" onMouseOut={() => {
                   setTooltipContent("");
                 }}/>

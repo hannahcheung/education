@@ -2,29 +2,11 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ReactTooltip from 'react-tooltip';
+// import {Button, Tooltip} from '@mui/material';
 import './index.css';
 import App from './App';
 import MapChart from './MapChart';
 import reportWebVitals from './reportWebVitals';
-
-
-/*
-const [content, setContent] = useState("");
-
-ReactDOM.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App/>}/>
-      <Route path="/locations" element={
-        <div>
-          <MapChart setTooltipContent={setContent} />
-          <ReactTooltip>{content}</ReactTooltip>
-        </div>
-      }/>
-    </Routes>
-  </BrowserRouter>,
-  document.getElementById('root')
-); */
 
 function Index() {
   const [content, setContent] = useState("");
@@ -34,8 +16,10 @@ function Index() {
         <Route path="/" element={<App/>}/>
         <Route path="/locations" element={
           <div>
-            <MapChart setTooltipContent={setContent} />
-            <ReactTooltip>{content}</ReactTooltip>
+            <MapChart setTooltipContent={setContent}/>
+            <ReactTooltip className="map-tooltip" delayHide={1000} effect="solid" type="error">
+              {content}
+            </ReactTooltip>
           </div>
         }/>
       </Routes>

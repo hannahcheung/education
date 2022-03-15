@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.map-tooltip {
+  font-size: 14px !important;
+  pointer-events: auto !important;
+}
+
+.map-tooltip:hover {
+  visibility: visible !important;
+}
