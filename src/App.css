@@ -5,10 +5,17 @@
   /*padding: 0.5rem; */
 }
 
-.map-chart {
+.site-title {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content:flex-end;
+  color:white; 
+}
+
+span {
+  font-family: "Playfair Display SC", serif;
+  font-size: 2.5rem;
 }
 
 /* change font and other features according to screen size */

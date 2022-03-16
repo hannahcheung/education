@@ -2,19 +2,22 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ReactTooltip from 'react-tooltip';
-// import {Button, Tooltip} from '@mui/material';
+import { ChakraProvider } from '@chakra-ui/react';
 import './index.css';
 import App from './App';
+import About from './About';
 import MapChart from './MapChart';
 import reportWebVitals from './reportWebVitals';
 
 function Index() {
+  // TODO: Wrap return in ChakraProvider and convert components to 
+  // Chakra UI components and adjust theme.
   const [content, setContent] = useState("");
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App/>}/>
-        <Route path="/about" element={<App/>}/>
+        <Route path="/about" element={<About/>}/>
         <Route path="/locations" element={
           <div>
             <MapChart setTooltipContent={setContent}/>

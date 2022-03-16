@@ -24,6 +24,10 @@ body {
   font-weight: 400;
 }
 
+a {
+  color: white;
+}
+
   /* change font and other features according to screen size */
   /* mobile */
   html {

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./Header";
 import "./Header.css";
 import "./MapChart.css";
+import "@fontsource/open-sans";
 import {
   ComposableMap,
   Geographies,
