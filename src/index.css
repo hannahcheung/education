@@ -13,7 +13,7 @@ code {
 }
 
 .map-tooltip {
-  font-size: 14px !important;
+  font-size: 0.5rem !important;
   pointer-events: auto !important;
 }
 

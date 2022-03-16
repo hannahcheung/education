@@ -1,5 +1,5 @@
 body {
-    background: -webkit-linear-gradient(top, #798DC3, #BC4689);
+    background: /*-webkit-linear-gradient(top, #798DC3, #BC4689); */ rgb(72, 128, 173);
     height: 100vh;
   }
   
@@ -7,6 +7,7 @@ body {
     color: white;
     font-family: sans-serif;
     font-weight: bold;
+    font-size: 1.25rem;
     /*padding: 0.5rem; */
   }
   
@@ -14,15 +15,9 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 1.5rem;
   }
-  
-  /*
-  .map-chart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
-  
+
   /* change font and other features according to screen size */
   /* mobile */
   html {

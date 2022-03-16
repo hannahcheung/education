@@ -1,9 +1,40 @@
+.input-text {
+    color: white;
+    font-size: 0.75rem;
+}
+
 .map-chart {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+.map-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top: 1rem;
+}
+
 .state-map {
     width: 50vw;
+}
+
+.text-input {
+    width: 40vw;
+    border: 1px solid white;
+    height: 1rem;
+    border-radius: 1rem;
+    /* make text not start at very beginning of input */
+    padding: 0 0.5rem;
+    background: rgba(249, 245, 225);
+    color: white;
+    font-size: 0.4rem;
+    margin-left:0.25rem;
+}
+
+/* prevents default blue outline when clicking on text input */
+.text-input:focus {
+    outline: none;
 }

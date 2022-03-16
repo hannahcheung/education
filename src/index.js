@@ -17,7 +17,7 @@ function Index() {
         <Route path="/locations" element={
           <div>
             <MapChart setTooltipContent={setContent}/>
-            <ReactTooltip className="map-tooltip" delayHide={1000} effect="solid" type="error">
+            <ReactTooltip className="map-tooltip" delayHide={1000} effect="solid" type="light">
               {content}
             </ReactTooltip>
           </div>

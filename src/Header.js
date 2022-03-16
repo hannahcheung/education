@@ -5,7 +5,7 @@ function Header() {
   return (
     <div>
       <header className="header">
-        <span className="title">CODE FOR EVERYONE</span>
+        <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/locations">Locations</Link>
       </header>
