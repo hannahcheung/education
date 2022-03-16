@@ -1,22 +1,28 @@
 body {
-    background: /*-webkit-linear-gradient(top, #798DC3, #BC4689); */ rgb(72, 128, 173);
-    height: 100vh;
-  }
+  background: /*-webkit-linear-gradient(top, #798DC3, #BC4689); */ rgb(72, 128, 173);
+  height: 100vh;
+}
   
-  .title {
-    color: white;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 1.25rem;
-    /*padding: 0.5rem; */
-  }
+.title {
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  /*padding: 0.5rem; */
+}
   
-  .header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 1.5rem;
-  }
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 1.5rem;
+}
+
+/* TODO: Font family change is not working */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
 
   /* change font and other features according to screen size */
   /* mobile */

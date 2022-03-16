@@ -1,14 +1,11 @@
 import './App.css';
-import { Link } from "react-router-dom";
+import Header from './Header';
+import "./Header.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="header">
-        <span className="title">CODE FOR EVERYONE</span>
-        <Link to="/about">About</Link>
-        <Link to="/locations">Locations</Link>
-      </header>
+      <Header/>
     </div>
   );
 }

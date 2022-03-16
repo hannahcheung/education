@@ -14,6 +14,7 @@ function Index() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App/>}/>
+        <Route path="/about" element={<App/>}/>
         <Route path="/locations" element={
           <div>
             <MapChart setTooltipContent={setContent}/>

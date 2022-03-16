@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Header from "./Header";
 import "./Header.css";
 import "./MapChart.css";
-import { rgbToHex, TextField } from "@mui/material";
 import {
   ComposableMap,
   Geographies,
@@ -203,7 +202,7 @@ const MapChart = ({ setTooltipContent }) => {
                 return (
               <Marker data-tip="" coordinates={marker.coordinates} key={i}
               onMouseOver={() => {
-                setTooltipContent(marker.url);
+                setTooltipContent(marker.name + ": " + marker.url);
               }}
               >
                 <g
@@ -215,7 +214,7 @@ const MapChart = ({ setTooltipContent }) => {
                 transform="translate(-12, -24)"
                 
                 >
-                <circle cx="12" cy="10" r="4"/>
+                <circle cx="12" cy="10" r="4" fill="#f5c05d"/>
                 <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z" onMouseOut={() => {
                   setTooltipContent("");
                 }}/>

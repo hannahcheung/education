@@ -22,14 +22,14 @@
 }
 
 .text-input {
-    width: 40vw;
+    width: 30vw;
     border: 1px solid white;
     height: 1rem;
     border-radius: 1rem;
     /* make text not start at very beginning of input */
     padding: 0 0.5rem;
-    background: rgba(249, 245, 225);
-    color: white;
+    background: white;
+    color: black;
     font-size: 0.4rem;
     margin-left:0.25rem;
 }
